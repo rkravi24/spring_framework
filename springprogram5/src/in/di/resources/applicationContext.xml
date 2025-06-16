@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean class="in.di.beans" id="addrID">
+    	<property name="houseno" value="1" />
+    	<property name="city" value="Begusrai"/>
+    </bean>
+    
+    
+    <bean class="in.di.beans" id="stdId">
+    	<property name="name" value="Ravi" />
+    	<property name="rollno" value="44" />
+    	<property name="address" ref="addrId" />
+    </bean>
+
+</beans>
