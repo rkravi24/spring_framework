@@ -10,7 +10,7 @@ public class Student {
 	private String name;
 	@Value("44")
 	private int rollno;
-	@Value("mrkravi03")
+	@Value("mrkravi")
 	private String email;
 
 	
