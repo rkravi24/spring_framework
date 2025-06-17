@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		<!-- setter -->
+		
+<!-- <bean class="in.di.beans.Address" id="addr">
+    	<property name="houseno" value="1"/>
+    	<property name="city" value="Begusarai"/>
+     </bean>
+     -->
+    
+<!-- <bean class="in.di.beans.Student" id="std" autowire="byName">
+    	<property name="name" value="Ravi" />
+    	<property name="rollno" value="44"/>
+     </bean> -->
+    
+    
+<!-- <bean class="in.di.beans.Student" id="std" autowire="byName">
+    	<property name="name" value="Ravi" />
+    	<property name="rollno" value="44"/>
+   	 </bean> -->
+   	 
+   	 
+   	 
+   	 <!-- constructor -->
+   	<bean class="in.di.beans.Address" id="addr">
+    	<constructor-arg value="1"/>
+    	<constructor-arg value="Begusarai"/>
+    </bean>
+    
+	<bean class="in.di.beans.Student" id="std" autowire="constructor">
+    	<constructor-arg value="Ravi" index="0"/>
+    	<constructor-arg value="44" index="1"/>
+    </bean>
+    
+    
+
+</beans>
